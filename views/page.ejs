@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<%include par/head %>
+<%include par/2nav%>
+
+<body>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col" style="background-color:white">
+<div class="card">
+
+<div class="card-header" align="center">
+
+<%= par %>
+
+</div><!-- head-->
+<div class="card-body" align="center">
+<% if(par=="news"){ %>
+<% include par/news %>
+<% } else if (par=="profile") { %>
+<% include par/prof %>
+<% } else if (par=="info") { %>
+<% include par/info %>
+<% } else if (par=="disc") { %>
+<% include par/disc %>
+<% } else if (par=="schedule") { %>
+<% include par/sch %>
+<% } else if (par=="video") { %>
+<% include par/vid %>
+<% } else if (par=="mail") { %>
+<% include par/mail %>
+<% } %>
+
+
+</div><!-- body-->
+
+</div><!-- card-->
+
+</div><!-- row end -->
+</div><!-- cont -->
+
+</body>
+</html>
