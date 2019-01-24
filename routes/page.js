@@ -19,6 +19,10 @@ bod:bod
 });
 }
 
+// router.get("/page-:id",function(req,res){
+// console.log(req.baseUrl)
+//})
+
 router.get('/page-:id', [chk,pcb])
 // post
 
