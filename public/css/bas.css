@@ -11,15 +11,18 @@ background-color:yellow;
 
 }
 
+/* navber */
 .navbar-collapse  {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
+
+
 .navbar a {
   color: white;
-  padding: 14px 20px;
+  padding: 0px 0px;
   text-decoration: none;
   text-align: center;
 }
@@ -30,7 +33,7 @@ background-color:yellow;
 }
 
 .nav-item{
-font-size:14px;
+font-size:16px;
 font-family:'Syltaen',serif;
 color:white;
 }
@@ -55,4 +58,17 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 font-family:'Syltaen',serif;
 }
 
+/*index*/
+
+.style1 {
+        font-size:16px;
+	padding-bottom: 5px;
+        font-family:'Syltaen',serif;
+	border-bottom: thin dotted rgba(0,0,0,0.39);
+        width:100%
+	padding-top: 5px;
+        margin-left:10px;
+	box-sizing: border-box;
+        
+}
 
