@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('rob:server');
+var debug = require('debug')('wow:server');
 var http = require('http');
 
 /**
