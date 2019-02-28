@@ -1,0 +1,33 @@
+      <div class="card">
+      <div class="card-header">
+  </div><!-- head -->
+      <div class="card-body">
+    <form method="post" action="/pre/in2">
+        <div class="form-group">
+        <label for="name" >name</label>
+    <input class="form-control" type="text" name="name" value="<%= bod.name %>">
+        </div>
+
+        <div class="form-group">
+        <label for="sku" >sku</label>
+<select class="form-control" id="sku">
+    <option>555</option>
+    <option>666</option>
+</select>
+        </div> 
+
+        <div class="form-group">
+        <label for="num" id="bk">unit</label>
+<select class="form-control" id="sel1">
+    <% for (var i=1;i<11;i++){ %>
+    <option><%= i %></option>
+    <% } %>
+</select>
+
+        </div> 
+
+    <button type="submit" class="btn btn-info">submit</button>
+</form>
+
+  </div>  <!-- body -->
+  </div>  <!-- card -->

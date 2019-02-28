@@ -1,0 +1,43 @@
+$f14:14px;
+$fbk:black;
+
+%fon1 {
+    font-size:$f14;
+    color:$fbk;
+}
+
+$bk-ali:aliceblue;
+$bk-bei:beige;
+$bk-cor:cornsilk;
+$bk-gai:gainsboro;
+$bk-mis:mistyrose;
+$bk-lg:lightgreen;
+
+#ali{
+@extend %fon1;
+background-color:$bk-ali;
+}
+
+#bei{
+@extend %fon1;
+background-color:$bk-bei;
+}
+
+#cor{
+@extend %fon1;
+background-color:$bk-cor;
+}
+
+#gai{
+@extend %fon1;
+background-color:$bk-gai;
+}
+
+#lg{
+@extend %fon1;
+background-color:$bk-lg;
+}
+#mis {
+@extend %fon1;
+background-color:$bk-mis;
+}
