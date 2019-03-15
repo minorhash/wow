@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<% include par/head %>
+<body>
+
+<!--menu-->
+<% include par/nav %>
+<!--menu-->
+
+<div class="row">
+<% var num=Number(par) %>
+
+<div class="col-md-12 col-xs-12" >
+<div class="d-flex p-1 bg-ali justify-content-center ">
+
+<div class="p-2">
+<% if(num>0) { %>
+<a href="eve-<%=num-1  %>">
+<% } else { %>
+<a href="eve-1">
+<% } %>
+<span class="p-1 mx-3" style="font-size:28px;color:gray"> < </span>
+</a></div>
+
+
+<p class="p-2" >  <%= num %>月</p>
+
+<div class="p-2">
+<a href="eve-<%= num+1 %>">
+<span class="p-1 mx-3" style="font-size:28px;color:gray"> > </span>
+</a>
+</div>
+</div><!-- d-flex -->
+
+<!-- <% include mon/day %> -->
+<!-- <% if(par==1) { %> -->
+<!-- <% include mon/1 %> -->
+<!-- <% } else if(par==2){ %> -->
+<!-- <% include mon/2 %> -->
+<!-- <% } else if(par==3){ %> -->
+<!-- <% include mon/3 %> -->
+<!-- <% } else if(par==4){ %> -->
+<!-- <% include mon/4 %> -->
+<!-- <% } else if(par==5){ %> -->
+<!-- <% include mon/5 %> -->
+<!-- <% } %> -->
+
+</div>
+
+
+</div>
+</div><!-- row -->
+</div><!-- cont -->
+
+<br>
+<div class="footer"><% include par/foot %></div>
+
+
+</body>
+

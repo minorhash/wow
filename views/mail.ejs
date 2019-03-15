@@ -1,0 +1,78 @@
+<head>
+<% include head %>
+</head>
+<body>
+<div id="wrapper">
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tbody>
+
+<tr>
+<td align="center">
+
+<% include menu %>
+</td></tr>
+
+<tr>
+
+<td height="640" align="left" valign="top">
+             
+<div class="title5"><img src="img/logo/tmsmlogo.png" width="32" height="32"
+alt=""/>CONTACT</div>
+
+<div class="style2">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="left" valign="top">
+<br>
+<h1><span class="content">お問い合わせ</span></h1>
+
+<form method="POST" action="/done" >
+<dl>
+<dt>お名前 (必須)</dt>
+<dd><input type="text" name="name" required></dd>
+<dt>タイトル (必須)</dt>
+<dd><input type="text" name="sub" required></dd>
+<dt>メールアドレス (必須)</dt>
+<dd><input type="email" name="mail" required></dd>
+<dt>お問い合わせ内容</dt>
+<dd>
+<textarea rows="5" cols="50"  name="mes" required>
+</textarea>
+</dd>
+</dl>
+<div class="btnWrap">
+<button type="submit" class="button">送信する</button>
+</div>
+</form>
+
+
+
+   </td>
+
+  </tr>
+
+</tbody>
+      </table>
+
+
+</div></td>
+
+</tr>
+
+<tr>
+<td align="center">
+
+ <% include foot %>
+</td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+	</div>
+
+</body>
+

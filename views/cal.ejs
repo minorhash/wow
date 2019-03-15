@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<% include ase/head %>
+<body>
+
+<!--menu-->
+<% include ase/nav %>
+<% include ase/3nav %>
+<!--menu-->
+
+<div class="row">
+
+<div class="col-md-12 col-xs-12" >
+    <br>
+    <br>
+    <br>
+<div class="d-flex p-1 bg-white justify-content-center ">
+
+<div class="p-2">
+<% if(num>1) { %>
+<a href="cal-<%=num-1  %>">
+<% } else { %>
+<a href="cal-1">
+<% } %>
+<span class="p-1 mx-3" style="font-size:28px;color:gray"> < </span>
+</a></div>
+
+<p class="p-2" >  <%= num %>月</p>
+
+<div class="p-2">
+<a href="cal-<%= num+1 %>">
+<span class="p-1 mx-3" style="font-size:28px;color:gray"> > </span>
+</a>
+</div>
+</div><!-- d-flex -->
+<% if(par>1 && par<9){ %>
+<% include par/1cal %>
+<% } else if (par==9) {%>
+<% include par/9cal %>
+<% } else if (par==10) {%>
+<% include par/10cal %>
+<% } else if (par==11) {%>
+<% include par/11cal %>
+<% } else if (par==12) {%>
+<% include par/12cal %>
+
+<% } %>
+
+</div><!-- row -->
+
+
+</div>
+
+
+<br>
+<div class="footer"><% include par/foot %></div>
+
+
+</body>
+

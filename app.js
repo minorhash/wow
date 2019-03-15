@@ -60,6 +60,9 @@ app.use('/', page);
 var pre= require('./routes/pre');
 app.use('/', pre);
 
+var cal= require('./routes/cal');
+app.use('/', cal);
+
 // adm
 var aadm=["index","sel","sel2","out","can","qr"]
 
@@ -73,11 +76,12 @@ app.use('/', aadm[i]);
 // var shop = require('./routes/shop/index');
 // app.use('/', shop);
 
-var top=["index","cart","item","his","my","dl","up","tmp"]
-for(var i=0;i<top.length;i++){
-top[i]=require('./routes/shop/'+top[i]);
-app.use('/', top[i]);
-}
+// var top=["index","cart","item","his","my","dl","up","tmp"]
+// for(var i=0;i<top.length;i++){
+// top[i]=require('./routes/shop/'+top[i]);
+// app.use('/', top[i]);
+// }
+//
 // top.forEach(function(ite){
 // ite=require('./routes/shop/'+ite)
 // app.use('/', ite)
