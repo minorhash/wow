@@ -1,29 +1,35 @@
-<div class="title5">CONTACT</div>
 
-<div class="style2">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td align="left" valign="top">
+
+<div class="row">
+<div class="col">
+<div class="wow flash">
 <br>
-<h1><span class="content">お問い合わせ</span></h1>
+<h4 class="card-tittle" align="left">CONTACT</h4></div>
+<hr style="border:1px solid#000022"> 
 
-<form method="POST" action="/done" >
-<dl>
-<dt>お名前 (必須)</dt>
-<dd><input type="text" name="name" required></dd>
-<dt>タイトル (必須)</dt>
-<dd><input type="text" name="sub" required></dd>
-<dt>メールアドレス (必須)</dt>
-<dd><input type="email" name="mail" required></dd>
-<dt>お問い合わせ内容</dt>
-<dd>
-<textarea rows="5" cols="50"  name="mes" required>
-</textarea>
-</dd>
-</dl>
-<div class="btnWrap">
-<button type="submit" class="button">送信する</button>
+</div><!--wow-->
+</div><!--row-->
+
+
+<div class="row">
+
+<div class="col-sm-2"></div>
+<br><br>
+
+
+
+<div class="col-sm-8">
+<% include mail/form %>
+
+
 </div>
-</form>
+
+</div><!--row-->
+
+<br><br><br><br><br><br>
+
+
+
+
+
 

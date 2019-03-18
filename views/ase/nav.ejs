@@ -6,6 +6,10 @@ aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
 
+<% var d=new Date() %>
+<% var mon=d.getMonth()+1 %>
+<% typeof mon %>
+
 <div class="collapse navbar-collapse " id="sup">
 <ul class="navbar-nav ml-auto ">
 
@@ -15,6 +19,7 @@ aria-label="Toggle navigation">
 <li class="nav-item"><a class="nav-link" href="/page-info">INFO</a></li>
 <li class="nav-item"><a class="nav-link" href="/page-profile">PROFILE</a></li>
 <li class="nav-item"><a class="nav-link" href="/page-disc">DISC</a></li>
+<li class="nav-item"><a class="nav-link" href="/cal-<%= mon %>">calendar</a></li>
 <li class="nav-item"><a class="nav-link" href="/page-schedule">SCHEDULE</a></li>
 <li class="nav-item"><a class="nav-link" >VIDEO</a></li>
 <li class="nav-item"><a class="nav-link" >MAIL</a></li>
