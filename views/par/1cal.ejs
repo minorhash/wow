@@ -6,7 +6,7 @@
 
 <% for (var i=mon1.length-day;i<mon1.length;i++ )  { %>
 <div class="col p-3 bg-ali border">
-<%= (mon1[i].date).toString().slice(8) %>
+<%= (mon1[i].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon1[i].des %>" target="_blank" >
 <%= mon1[i].eve %> </a></span>
 </div>
@@ -26,7 +26,7 @@
 
 <% for (var i=7-day;i<9-day;i++ )  { %>
 <div class="col p-3 bg-ali border">
-<%= (mon[i].date).toString().slice(9) %>
+<%= (mon[i].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon[i].des %>" target="_blank" >
         <%= mon[i].eve %> </a></span>
 </div>
@@ -34,7 +34,7 @@
 
 <% for (var i=9-day;i<14-day;i++ )  { %>
 <div class="col p-3 bg-ali border">
-<%= (mon[i].date).toString().slice(9) %>
+<%= (mon[i].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon[i].des %>" target="_blank" >
         <%= mon[i].eve %> </a></span>
 </div>
@@ -46,7 +46,7 @@
 
 <% for (var i=14-day;i<21-day;i++ )  { %>
 <div class="col p-3 bg-ali border">
-<%= (mon[i].date).toString().slice(8) %>
+<%= (mon[i].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon[i].des %>" target="_blank" >
         <%= mon[i].eve %> </a></span>
 </div>
@@ -71,7 +71,7 @@
 
 <% for (var i=28-day;i<mon.length;i++ ) { %>
 <div class="col p-3 bg-ali border">
-<%= (mon[i].date).toString().slice(8) %>
+<%= (mon[i].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon[i].des %>" target="_blank" >
 <%= mon[i].eve %> </a></span>
 </div>
@@ -99,7 +99,7 @@
 
 <% for (var i=28-day;i<mon.length;i++ )  { %>
 <div class="col p-3 bg-lg border">
-<%= (mon[i].date).toString().slice(8) %>
+<%= (mon[i].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon[i].des %>" target="_blank" >
 <%= mon[i].eve %> </a></span>
 </div>
@@ -120,14 +120,14 @@
 <div class="row">
 <% if(par==3 || par==6) { %>
 <div class="col p-3 bg-ali border">
-<%= (mon[mon.length-1].date).toString().slice(8) %>
+<%= (mon[mon.length-1].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon[mon.length-1].des %>" target="_blank" >
 <%= mon[mon.length-1].eve %> </a></span>
 </div>
 
 <% for (var i=0;i<6;i++ )  { %>
 <div class="col p-3 bg-ali border">
-<%= (mon2[i].date).toString().slice(9) %>
+<%= (mon2[i].date).toString().slice(8).replace(/^0/,"") %>
 <span class="bg-ali"><a href="<%= mon2[i].des %>" target="_blank" >
 <%= mon2[i].eve %> </a></span>
 </div>
