@@ -7,13 +7,9 @@ font-family:'Gulim';
 font-size :15px;
 font-family:'Gulim';
 background-color:yellow;
-
 }
 
-.nav{
-text-align: center;
-background-color:white;
-}
+/* navber */
 
 .navbar a {
   color: white;
@@ -28,7 +24,7 @@ background-color:white;
 }
 
 .nav-item{
-font-size:18px;
+font-size:16px;
 font-family:'Gulim';
 color:white;
 }
@@ -47,58 +43,17 @@ color:white;
 /* footer */
 
 .foot{
-text-align:center;
-background-color:darkblue;
 font-family:'Gulim';
 position:fixed;
 bottom:0;
 width:100%;
 }
 
-/*index*/
-
-.style1 {
-font-size:16px;
-padding-bottom: 5px;
-font-family:'Gulim';
-border-bottom: thin dotted rgba(0,0,0,0.39);
-width:100%
-padding-top: 5px;
-margin-left:10px;
-box-sizing: border-box;
-        
+.foot2 {
+	text-align: right;
+	border-top: thin dotted rgba(0,0,0,0.39);
+	margin-top: 10px;
 }
-
-
-.img1{
-    background-image:url("../img/main3.jpg");
-    background-color:black;
-    background-repeat:repeat-y;
-    background-size:cover;
-    width:1600px;
-    height:900px;
-    position:relative;
-}
-
-.no-gut{
-padding-left:0;
-padding-right:0;
-
-margin:0;
-padding:0;
-}
-.no-gut > .col,
-.no-gut > [class*="col-"] {
-padding-left:0;
-padding-right:0;
-
-margin:0;
-padding:0;
-}
-
-
-
-/*info*/
 
 .title4 {
 	font-size: 20px;
@@ -108,12 +63,23 @@ padding:0;
 	margin-bottom: 10px;
 }
 
+.style1 {
+    font-size:16px;
+	padding-bottom: 5px;
+    font-family:'Gulim';
+	border-bottom: thin dotted rgba(0,0,0,0.39);
+    width:100%;
+	padding-top: 5px;
+    margin-left:10px;
+	box-sizing: border-box;
+}
+
 .style2 {
 	text-align:left;
     padding-bottom: 10px;
 	border: medium solid rgba(0,0,0,0.10);
     font-size:14px;
-    font-family:'Gulim' ;
+    font-family:'Gulim';
     width:100%;
     padding-top: 10px;
 	padding-left: 10px;
@@ -124,99 +90,57 @@ padding:0;
 	margin-bottom: 10px;
 }
 
-
-.foot2 {
-	text-align: right;
-	border-top: thin dotted rgba(0,0,0,0.39);
-	margin-top: 10px;
+.style3 {
+    font-size:15px;
+	padding-bottom: 5px;
+    font-family:'Gulim';
+	border-bottom: thin dotted rgba(0,0,0,0.39);
+    width:100%;
+	padding-top: 10px;
+    margin-left:10px;
+	box-sizing: border-box;
+        
 }
 
-/*Parallax2*/
-
-
-.a {
-    height: 100vh;
-    background-color:rgba(7,21,44,0.81) 
+.img1{
+    background-image:url("../img/main2.jpg");
+    background-color:red;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:1600px;
+    height:900px;
+    position:relative;
 }
 
-.first {
-    height: 100vh;
-    background-color: #778899
+#bk{background-color:white;
+color:black;
 }
 
+#siz16{ font-size:16px;}
+#siz24{ font-size:24px;}
+#siz36{ font-size:36px;}
 
-.c {
-    height: 100vh;
-    background-color: #778899
-}
-
-
-.d {
-    height: 100vh;
-    background-color: #778899
-}
-
-
-.e {
-    height: 100vh;
-    background-color: #778899
-}
-
-/*index animation tittle*/
-
-/*button*/
-
-.btn {
-    padding: 2px 3px;
-    font-weight:5;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.btn-outline {
-    background: none;
-    padding: 2px 3px;
-}
-
-.scr{
-float:right;
-right:0px;
-top:0;
-background-color: rgba(0, 0, 0, 0.1);
-width:100%;
-  
-}
-.scr ul{
-  list-style-type:none;
-  padding:0;
-}
-
-.scr ul li{
-  display:inline-block;
-  width:100px;
-}
-
-.blue{
-  position:fixed;
-  top:0;
-background-color: rgba(0, 0, 0, 1);
-  width:100%;
-  height:50px;
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+.bg-iconnav {
+      background: #f0323d;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #f0323d 0%, #e6366c 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, #f0323d 0%, #e6366c 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #f0323d 0%, #e6366c 100%);
+              /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0323d', endColorstr='#e6366c', GradientType=0);
+                /* IE6-9 */
+                border-radius: 0;
+                  padding: 10px;
 }
 
 .navbar-toggler-icon {
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.nav-cus {
-background-color: rgba(0, 0, 0, 0.5);
+.nav-bkg{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-#opa{
-opacity:1;
-
-}
-
-#stc{
-position:sticky;
-}
