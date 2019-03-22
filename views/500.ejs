@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-<%include base/head %>
+<%include ase/head %>
+<%include ase/nav%>
+<%include ase/2nav%>
 <body>
-<%include par/2nav%>
 <div class="container-fluid">
 <div class="row">
     <div class="col-md-12" id="bei">
-        <br>
-        <span class="badge badge-info"><h4>500</h4></span>
+        <br><br><br>
+        <span class="badge badge-info"><h4>500 error</h4></span><br>
+        <div class="p-3 bg-mis">
+            <%= err %>
+        </div>
+
         <h4> トップに <a href="/">もどる</a></h4>
 </div><!-- col-->
 </div><!-- row-->

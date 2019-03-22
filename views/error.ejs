@@ -1,20 +1,30 @@
-<%include base/head %>
-<%include nav/2nav %>
+<%include ase/head %>
+<%include ase/nav %>
+<%include ase/2nav %>
+<br><br>
+<br>
 <div class="container-fluid">
     <!-- row -->
 <div class="row">
-    <%include base/1sid%>
+    <%include ase/1sid%>
     <div class="col-10" id="bei">
         <br>
     <% if( error.status=="404"){ %>
-    <span class="badge badge-info"><h4>    ページがみつかりません。</h4></span>
+    <span class="badge badge-info"><h4>ページがみつかりません。</h4></span><br>
+    <div class="p-2 bg-bei"><%= err %></div>
+
+    <% }  else if( error.status=="500"){ %>
+    <span class="badge badge-info"><h4>    500 err</h4></span><br>
+    <%= err %>
+
     <% } %>
+
     <br>
 
 <!-- <pre><%= error.stack %></pre> -->
 </div>
 
-    <%include base/1sid%>
+    <%include ase/1sid%>
 </div></div>
 
 <%include base/foot%>

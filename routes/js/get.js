@@ -1,5 +1,8 @@
 var sen=require("./mail")
 var name="min"
-var mail="min@mail.com"
+var mail="matsuo.tms@gmail.com"
+var sub="sub"
+var mes="mes"
 
-console.log(sen(name,mail))
+sen(mail,sub,mes)
+console.log(sen)

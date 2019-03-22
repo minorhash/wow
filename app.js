@@ -63,6 +63,14 @@ app.use('/', pre);
 var cal= require('./routes/cal');
 app.use('/', cal);
 
+var mail= require('./routes/mail');
+app.use('/', mail);
+var done= require('./routes/done');
+app.use('/', done);
+
+// var r404= require('./routes/r404');
+// app.use('/', r404);
+
 // adm
 var aadm=["index","sel","sel2","out","can","qr"]
 
@@ -90,20 +98,32 @@ app.use('/', aadm[i]);
 
 // err =================================
 
-app.use(function(req, res, next) {
-next(createError(404));
-});
+var serErr=function (err, req, res, next) {
+console.error(err.stack)
+res.status(500).render('500',{err:err.stack})
+next(err)}
+app.use(serErr)
 
-app.use(function(req, res, next) {
-next(createError(500));
-});
+app.use(function(req, res, next) {next(createError(404,err));});
+
+var notErr=function (err, req, res, next) {
+console.error(err.stack)
+res.status(404).render('404',{err:err.stack})
+next(err)}
+app.use(notErr)
+
+
+// app.use(function(req, res, next) {
+// next(createError(500));
+// });
 
 app.use(function(err, req, res, next) {
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+    //res.locals.message = err.message;
+    //res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  res.status(err.status || 500);
-  res.render('error');
-});
+res.status(err.status ).render('404',{
+err:err.stack
+})
+next(err)});
 
 module.exports = app;
