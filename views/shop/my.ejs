@@ -1,5 +1,5 @@
 <% include par/head %>
-<% include par/nav %>
+<% include par/nav/my %>
 <body>
 <div class="container-fluid">
 <div class="row">
@@ -14,8 +14,8 @@
 
 <div class="col-md-10">
 <br>
-<div class="box97">マイページ</div>
-    <br>
+<div class="box97"><%= shop.mypage %></div>
+<br>
     <% if(mailadr){ %>
 <% include par/my %>
 <% } %>
