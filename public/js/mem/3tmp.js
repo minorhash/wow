@@ -4,17 +4,19 @@ var abr=[],cap,fig
 var txt=function(){
 hea=document.createElement("h4")
     //hea.setAttribute("text-align","center")
-tx[0]=document.createTextNode("あゆ")
-tx[1]=document.createTextNode("生年月日：3月10日")
-tx[2]=document.createTextNode("身長：157cm")
-tx[3]=document.createTextNode("出身地：ダイヤモンドプラネット")
-tx[4]=document.createTextNode("特技：歌、声量があること")
-tx[5]=document.createTextNode("所属：＠ほぉ〜むカフェ（プレミアムメイド）")
-tx[6]=document.createTextNode("メンバーカラー：青")
+tx[0]=document.createTextNode("はぐみ")
+tx[1]=document.createTextNode("生年月日：12月16日")
+tx[2]=document.createTextNode("身長：151cm")
+tx[3]=document.createTextNode("血液型：はちみつ型")
+tx[4]=document.createTextNode("出身地：はぐの森")
+tx[5]=document.createTextNode("特技：歌、ダンス、バレエ、歌")
+tx[6]=document.createTextNode("趣味：アイドル、バレエ、歌")
+tx[7]=document.createTextNode("所属：＠ほぉ〜むカフェカフェドンキ店")
+tx[8]=document.createTextNode("メンバーカラー：黄色")
 hea.appendChild(tx[0])
 console.log(tx[0])
 
-for(var i=0;i<10;i++){
+for(var i=0;i<11;i++){
 abr[i]=document.createElement("br")
 }
 
@@ -30,18 +32,10 @@ img.className="img-fluid";
 var capf=function(arg){
 cap=document.createElement(arg)
 cap.appendChild(hea)
-cap.appendChild(tx[1])
-cap.appendChild(abr[1])
-cap.appendChild(tx[2])
-cap.appendChild(abr[2])
-cap.appendChild(tx[3])
-cap.appendChild(abr[3])
-cap.appendChild(tx[4])
-cap.appendChild(abr[4])
-cap.appendChild(tx[5])
-cap.appendChild(abr[5])
-cap.appendChild(tx[6])
-cap.appendChild(abr[6])
+    for(var i=1;i<9;i++){
+cap.appendChild(tx[i])
+cap.appendChild(abr[i])
+}
 
 }//capf
 

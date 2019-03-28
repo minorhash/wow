@@ -1,87 +1,78 @@
-var txt=function(){
-var hea=document.createElement("h4")
-var h1=document.createElement("h1")
-var tx1=document.createTextNode("はぐみ")
-var tx2=document.createTextNode("生年月日：12月16日")
-var tx3=document.createTextNode("身長：151cm")
-var tx4=document.createTextNode("血液型：はちみつ型")
-var tx5=document.createTextNode("出身地：はぐの森")
-var tx6=document.createTextNode("特技：ダンス、バレエ、歌")
-var tx7=document.createTextNode("趣味：アイドル、バレエ、歌")
-var tx8=document.createTextNode("所属：＠ほぉ〜むカフェドンキ店所属")
-var tx9=document.createTextNode("メンバーカラー：黄")
+var hea,tx=[]
+var abr=[],cap,fig
 
-var br1=document.createElement("br")
-var br2=document.createElement("br")
-var br3=document.createElement("br")
-var br4=document.createElement("br")
-var br5=document.createElement("br")
-var br6=document.createElement("br")
+var txt=function(){
+hea=document.createElement("h4")
+    //hea.setAttribute("text-align","center")
+tx[0]=document.createTextNode("はぐみ")
+tx[1]=document.createTextNode("生年月日：12月16日")
+tx[2]=document.createTextNode("身長：151cm")
+tx[3]=document.createTextNode("血液型：はちみつ型")
+tx[4]=document.createTextNode("出身地：はぐの森")
+tx[5]=document.createTextNode("特技：歌、ダンス、バレエ、歌")
+tx[6]=document.createTextNode("趣味：アイドル、バレエ、歌")
+tx[7]=document.createTextNode("所属：＠ほぉ〜むカフェカフェドンキ店")
+tx[8]=document.createTextNode("メンバーカラー：黄色")
+hea.appendChild(tx[0])
+console.log(tx[0])
+
+for(var i=0;i<11;i++){
+abr[i]=document.createElement("br")
+}
 
 }//txt()
 
-var imf=function(){
 var img=document.createElement("img")
+
+var imgf=function(){
 img.src="img/hag.jpg"
 img.className="img-fluid";
 }//imf
 
-var big=function(){
-var fig=document.createElement("figure")
-var img=document.createElement("img")
-img.src="img/hag.jpg"
-img.className="img-fluid";
+var capf=function(arg){
+cap=document.createElement(arg)
+cap.appendChild(hea)
+    for(var i=1;i<9;i++){
+cap.appendChild(tx[i])
+cap.appendChild(abr[i])
+}
 
+}//capf
+
+var bapp=function(){
+fig=document.createElement("figure")
+fig.appendChild(img)
+imgf()
 txt()
+capf("figcaption")
+fig.appendChild(cap)
+document.getElementById("hag").appendChild(fig);
 
-var cap=document.createElement("figcaption")
+}//app
+
+var sapp=function(){
+fig=document.createElement("div")
 fig.appendChild(img)
 
-h1.appendChild(tx1)
-
-hea.appendChild(h1)
-
-cap.appendChild(hea)
-
-cap.appendChild(tx2)
-cap.appendChild(br1)
-cap.appendChild(tx3)
-cap.appendChild(br2)
-cap.appendChild(tx4)
-cap.appendChild(br3)
-cap.appendChild(tx5)
-cap.appendChild(br4)
-cap.appendChild(tx6)
-cap.appendChild(br5)
-
+imgf()
+txt()
+capf("div")
+    console.log(cap)
+    cap.classList.add("bg-dark")
+    cap.classList.add("p-3")
+    cap.classList.add("wh")
 fig.appendChild(cap)
 
 document.getElementById("hag").appendChild(fig);
 
+}//app
+var big=function(){
+bapp()
 }
 
 var sma=function(){
+sapp()
 
-var bod=document.createElement("div")
-var img=document.createElement("img")
-img.src="img/hag.jpg"
-img.className="img-fluid";
-
-txt()
-
-h1.appendChild(tx1)
-
-bod.appendChild(img)
-bod.appendChild(h1)
-bod.appendChild(br1)
-bod.appendChild(tx2)
-bod.appendChild(br2)
-bod.appendChild(tx3)
-bod.appendChild(br3)
-bod.appendChild(tx4)
-bod.appendChild(br4)
-
-document.getElementById("hag").appendChild(bod);
 }
 
 
