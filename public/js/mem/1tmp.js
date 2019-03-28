@@ -31,7 +31,7 @@ img.className="img-fluid";
 var capf=function(arg){
 cap=document.createElement(arg)
 cap.appendChild(hea)
-    for(var i=1;i<9;i++){
+for(var i=1;i<9;i++){
 cap.appendChild(tx[i])
 cap.appendChild(abr[i])
 }
@@ -50,21 +50,39 @@ document.getElementById("ayu").appendChild(fig);
 }//app
 
 var sapp=function(){
-fig=document.createElement("div")
-fig.appendChild(img)
+
+var aid=document.getElementById("ayu")
+    //        mod.className="modal"
 
 imgf()
-txt()
-capf("div")
-    console.log(cap)
-    cap.classList.add("bg-dark")
-    cap.classList.add("p-3")
-    cap.classList.add("wh")
-fig.appendChild(cap)
+    img.className="img-fluid"
+    img.setAttribute("data-toggle","modal")
+    img.setAttribute("data-target","#mid")
+aid.appendChild(img)
 
-document.getElementById("ayu").appendChild(fig);
+var mod=document.createElement("div")
+mod.className="modal fade"
+mod.setAttribute("role","dialog")
+mod.setAttribute("id","mid")
+var dia=document.createElement("div")
+dia.className="modal-dialog"
+txt()
+    capf("div")
+        console.log(cap)
+    cap.className="modal-content"
+
+    dia.appendChild(cap)
+mod.appendChild(dia)
+aid.appendChild(mod)
+
+console.log(aid)
+
+txt()
+
+    //document.getElementById("ayu").appendChild(mod);
 
 }//app
+
 var big=function(){
 bapp()
 }
