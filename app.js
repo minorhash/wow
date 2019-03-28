@@ -98,23 +98,23 @@ app.use('/', top[i]);
 
 // err =================================
 
-var serErr=function (err, req, res, next) {
-console.error(err.stack)
-res.status(500).render('500',{err:err.stack})
-next(err)}
-app.use(serErr)
+// var serErr=function (err, req, res, next) {
+// console.error(err.stack)
+// res.status(500).render('500',{err:err.stack})
+// next(err)}
+// app.use(serErr)
 
-app.use(function(req, res, next) {next(createError(404,err));});
+// app.use(function(req, res, next) {next(createError(404,err));});
 
-var notErr=function (err, req, res, next) {
-console.error(err.stack)
-res.status(404).render('404',{err:err.stack})
-next(err)}
-app.use(notErr)
+// var notErr=function (err, req, res, next) {
+// console.error(err.stack)
+// res.status(404).render('404',{err:err.stack})
+// next(err)}
+// app.use(notErr)
 
-app.use(function(req, res, next) {
-next(createError(500));
-});
+// app.use(function(req, res, next) {
+// next(createError(500));
+// });
 
 app.use(function(err, req, res, next) {
 res.locals.message = err.message;
