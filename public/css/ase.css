@@ -1,6 +1,7 @@
 body{
 font-size :16px;
 font-family:'Gulim';
+background-color:black;
 }
 
 #bkg1{
@@ -47,6 +48,7 @@ font-family:'Gulim';
 position:fixed;
 bottom:0;
 width:100%;
+background-color:darkblue;
 }
 
 .foot2 {
@@ -141,6 +143,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 .nav-bkg{
-    background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 0.5);
 }
 

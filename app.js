@@ -84,42 +84,41 @@ app.use('/', aadm[i]);
 // var shop = require('./routes/shop/index');
 // app.use('/', shop);
 
-// var top=["index","cart","item","his","my","dl","up","tmp"]
-// for(var i=0;i<top.length;i++){
-// top[i]=require('./routes/shop/'+top[i]);
-// app.use('/', top[i]);
-// }
-//
+var top=["index","cart","item","his","my","dl","up","tmp"]
+
+for(var i=0;i<top.length;i++){
+top[i]=require('./routes/shop/'+top[i]);
+app.use('/', top[i]);
+}
+
 // top.forEach(function(ite){
 // ite=require('./routes/shop/'+ite)
 // app.use('/', ite)
 // })
 
-
 // err =================================
 
-var serErr=function (err, req, res, next) {
-console.error(err.stack)
-res.status(500).render('500',{err:err.stack})
-next(err)}
-app.use(serErr)
+// var serErr=function (err, req, res, next) {
+// console.error(err.stack)
+// res.status(500).render('500',{err:err.stack})
+// next(err)}
+// app.use(serErr)
 
-app.use(function(req, res, next) {next(createError(404,err));});
+// app.use(function(req, res, next) {next(createError(404,err));});
 
-var notErr=function (err, req, res, next) {
-console.error(err.stack)
-res.status(404).render('404',{err:err.stack})
-next(err)}
-app.use(notErr)
-
+// var notErr=function (err, req, res, next) {
+// console.error(err.stack)
+// res.status(404).render('404',{err:err.stack})
+// next(err)}
+// app.use(notErr)
 
 // app.use(function(req, res, next) {
 // next(createError(500));
 // });
 
 app.use(function(err, req, res, next) {
-    //res.locals.message = err.message;
-    //res.locals.error = req.app.get('env') === 'development' ? err : {};
+res.locals.message = err.message;
+res.locals.error = req.app.get('env') === 'development' ? err : {};
 
 res.status(err.status ).render('404',{
 err:err.stack

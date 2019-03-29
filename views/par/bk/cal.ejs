@@ -1,0 +1,41 @@
+<div class="row">
+
+<div class="col-md-12 col-xs-12" >
+    <br>
+    <br>
+    <br>
+<div class="d-flex p-1 bg-white justify-content-center ">
+
+<div class="p-2">
+<% if(num>2 ) { %>
+<a href="cal-<%= num-1  %>">
+<% } else if(num < 2) { %>
+<a href="cal-2">
+<% } %>
+<span class="p-1 mx-3" style="font-size:28px;color:gray"> < </span>
+</a></div>
+
+<p class="p-2" >  <%= num %>月</p>
+
+<div class="p-2">
+
+<% if(num< 12) { %>
+<a href="cal-<%= num+1 %>">
+<% } else if(num > 12) { %>
+<a href="cal-12">
+<% } %>
+
+<span class="p-1 mx-3" style="font-size:28px;color:gray"> > </span>
+</a>
+</div>
+</div><!-- d-flex -->
+
+<div class="m-3 p-3">
+<% include ./1cal %>
+</div><!-- cal-->
+
+</div><!-- row -->
+
+
+
+
