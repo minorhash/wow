@@ -52,7 +52,6 @@ document.getElementById("ayu").appendChild(fig);
 var sapp=function(){
 
 var aid=document.getElementById("ayu")
-    //        mod.className="modal"
 
 imgf()
     img.className="img-fluid"
@@ -64,22 +63,17 @@ var mod=document.createElement("div")
 mod.className="modal fade"
 mod.setAttribute("role","dialog")
 mod.setAttribute("id","mid")
+    //mod.setAttribute("style","position:static")
+
 var dia=document.createElement("div")
 dia.className="modal-dialog"
 txt()
-    capf("div")
-        console.log(cap)
-    cap.className="modal-content"
+capf("div")
+cap.className="modal-content"
 
-    dia.appendChild(cap)
+dia.appendChild(cap)
 mod.appendChild(dia)
 aid.appendChild(mod)
-
-console.log(aid)
-
-txt()
-
-    //document.getElementById("ayu").appendChild(mod);
 
 }//app
 

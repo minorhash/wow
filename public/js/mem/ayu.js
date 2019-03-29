@@ -31,14 +31,14 @@ img.className="img-fluid";
 var capf=function(arg){
 cap=document.createElement(arg)
 cap.appendChild(hea)
-    for(var i=1;i<9;i++){
+for(var i=1;i<9;i++){
 cap.appendChild(tx[i])
 cap.appendChild(abr[i])
 }
 
 }//capf
 
-var bapp=function(){
+var big=function(){
 fig=document.createElement("figure")
 fig.appendChild(img)
 imgf()
@@ -49,31 +49,33 @@ document.getElementById("ayu").appendChild(fig);
 
 }//app
 
-var sapp=function(){
-fig=document.createElement("div")
-fig.appendChild(img)
+var sma=function(){
+
+var aid=document.getElementById("ayu")
 
 imgf()
+    img.className="img-fluid"
+    img.setAttribute("data-toggle","modal")
+    img.setAttribute("data-target","#mid")
+aid.appendChild(img)
+
+var mod=document.createElement("div")
+mod.className="modal fade"
+mod.setAttribute("role","dialog")
+mod.setAttribute("id","mid")
+    //mod.setAttribute("style","position:static")
+
+var dia=document.createElement("div")
+dia.className="modal-dialog"
 txt()
 capf("div")
-    console.log(cap)
-    cap.classList.add("bg-dark")
-    cap.classList.add("p-3")
-    cap.classList.add("wh")
-fig.appendChild(cap)
+cap.className="modal-content"
 
-document.getElementById("ayu").appendChild(fig);
+dia.appendChild(cap)
+mod.appendChild(dia)
+aid.appendChild(mod)
 
 }//app
-var big=function(){
-bapp()
-}
-
-var sma=function(){
-sapp()
-
-}
-
 
 if(w>600){big()
 }else{sma()
