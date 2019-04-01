@@ -1,31 +1,15 @@
 body{
 font-size :16px;
 font-family:'Gulim';
-background:black;
-
 }
 
 #bkg1{
 font-size :15px;
 font-family:'Gulim';
 background-color:yellow;
-
 }
 
-
 /* navber */
-
-/* .navbar-toggler-icon { */         
-/*     background-image: url("data:image/svg+xml; */
-/*     charset=utf8,%3Csvg viewBox='0 0 32 32' */ 
-/*     xmlns='http://www.w3.org/2000/svg'%3E%3Cpath */ 
-/*     stroke='rgba(255,255,255, 1)' */ 
-/*     stroke-width='2' */ 
-/*     stroke-linecap='round' */ 
-/*     stroke-miterlimit='10' */ 
-/*     d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */ 
-/* } */
-
 
 .navbar a {
   color: white;
@@ -63,7 +47,6 @@ font-family:'Gulim';
 position:fixed;
 bottom:0;
 width:100%;
-background-color:darkblue;
 }
 
 .foot2 {
@@ -75,23 +58,20 @@ background-color:darkblue;
 .title4 {
 	font-size: 20px;
 	color: #000000;
-	font-weight: bold;
+efont-weight: bold;
 	border-bottom: thin dotted rgba(0,0,0,0.39);
 	margin-bottom: 10px;
 }
 
-/*index*/
-
 .style1 {
-font-size:16px;
-padding-bottom: 5px;
-font-family:'Gulim';
-border-bottom: thin dotted rgba(0,0,0,0.39);
-width:100%;
-padding-top: 5px;
-margin-left:10px;
-box-sizing: border-box;
-        
+    font-size:15px;
+	padding-bottom: 5px;
+    font-family:'Gulim';
+	border-bottom: thin dotted rgba(0,0,0,0.39);
+    width:100%;
+	padding-top: 5px;
+    margin-left:10px;
+	box-sizing: border-box;
 }
 
 .style2 {
@@ -99,7 +79,7 @@ box-sizing: border-box;
     padding-bottom: 10px;
 	border: medium solid rgba(0,0,0,0.10);
     font-size:14px;
-    font-family:'Gulim' ;
+    font-family:'Gulim';
     width:100%;
     padding-top: 10px;
 	padding-left: 10px;
@@ -109,6 +89,7 @@ box-sizing: border-box;
 	box-sizing: border-box;
 	margin-bottom: 10px;
 }
+
 .style3 {
     font-size:15px;
 	padding-bottom: 5px;
@@ -121,11 +102,8 @@ box-sizing: border-box;
         
 }
 
-
-
-
 .img1{
-    background-image:url("../img/main3.jpg");
+    background-image:url("../img/main2.jpg");
     background-color:red;
     background-repeat:no-repeat;
     background-size:cover;
@@ -133,7 +111,6 @@ box-sizing: border-box;
     height:900px;
     position:relative;
 }
-
 
 #bk{background-color:white;
 color:black;
@@ -163,6 +140,8 @@ color:black;
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+/*prof-menber*/
+
 figure {
   position: relative;
   overflow: hidden;
@@ -189,8 +168,35 @@ figure:hover figcaption {
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
   opacity: 1;
+
 }
 
-.wh{
-color:white;
+
+
+
+/*グラデーションボタン*/
+
+
+.btn12 {
+    background: transparent;
+    color: #3169d1 !important;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background: -webkit-linear-gradient(180deg, rgba(49,105,209,0.8), rgba(132, 179, 252, 0.8), rgba(205, 200, 252, 0), rgba(205, 200, 252, 0));
+    background: -webkit-linear-gradient(right, rgba(49,105,209,0.8), rgba(132, 179, 252, 0.8), rgba(205, 200, 252, 0), rgba(205, 200, 252, 0));
+    background: linear-gradient(270deg, rgba(49,105,209,0.8), rgba(132, 179, 252, 0.8), rgba(205, 200, 252, 0), rgba(205, 200, 252, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border: none;
+    border: 1px solid #3169d1;
 }
+.btn12:hover {
+    background-position: 99% 50%;
+    color: #fff !important;
+    border: 1px solid rgba(205, 200, 252, 0);
+}
+
+
+
+
+

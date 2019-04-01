@@ -10,11 +10,11 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger('dev'));
 
 var sess = require('cookie-session');
 app.use(
@@ -60,8 +60,8 @@ app.use('/', page);
 var pre= require('./routes/pre');
 app.use('/', pre);
 
-var cal= require('./routes/cal');
-app.use('/', cal);
+// var cal= require('./routes/cal');
+// app.use('/', cal);
 
 var mail= require('./routes/mail');
 app.use('/', mail);
