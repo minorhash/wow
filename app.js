@@ -37,11 +37,11 @@ sess({
 //   }
 // }));
 
-app.use(i18n({
-  translationsPath: path.join(__dirname, 'i18n'),
-  siteLangs: ["en","ja"],
-  textsVarName: 'trans'
-}));
+// app.use(i18n({
+//   translationsPath: path.join(__dirname, 'i18n'),
+//   siteLangs: ["en","ja"],
+//   textsVarName: 'trans'
+// }));
 
 // i18n ======================================
 var nat=["news","prof","disc","sch","vid","mail"]
@@ -60,8 +60,8 @@ app.use('/', page);
 var pre= require('./routes/pre');
 app.use('/', pre);
 
-// var cal= require('./routes/cal');
-// app.use('/', cal);
+var cal= require('./routes/cal');
+app.use('/', cal);
 
 var mail= require('./routes/mail');
 app.use('/', mail);
